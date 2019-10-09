@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SmalyzerDesktop</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+  <div class="container" id="app">
+    <div class="item box-menu">
+      <menu-component></menu-component>
+    </div>
+    <div class="item pane box-file_upload">
+      <file-upload-component></file-upload-component>
+    </div>
+    <div class="item pane box-manage_files">
+      <file-list-component ref="flc"></file-list-component>
+    </div>
+    <div class="item pane box-analysis_result">
+      <analysis-result-component ref="arc"></analysis-result-component>
+    </div>
+  </div>
+
+  <!-- <div id="app">
+    <!-- <h1>{{ message }}</h1> -->
+    <!-- <file-upload-component></file-upload-component>
+  </div> -->
+  <!-- <script src="js/sample.vue"></script> -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
